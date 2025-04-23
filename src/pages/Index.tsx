@@ -16,12 +16,23 @@ const Index = () => {
             and interactive scientific research.
           </p>
         </section>
-        <Button
-          className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-semibold font-sans shadow transition hover:scale-105"
-          onClick={() => window.open("https://anindya.bearblog.dev/blogs", "_blank")}
-        >
-          Read Blog Posts
-        </Button>
+        <div className="flex space-x-4 justify-center">
+          <Button
+            className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-semibold font-sans shadow transition hover:scale-105"
+            onClick={() => window.open("https://anindya.bearblog.dev/blogs", "_blank")}
+          >
+            Read Blog Posts
+          </Button>
+          <Button
+            className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-semibold font-sans shadow transition hover:scale-105"
+            onClick={() => {
+              window.open("https://litefold.vercel.app", "_blank")
+              window.open("https://github.com/Anindyadeep/litefold", "_blank")
+            }}
+          >
+            Explore LiteFold
+          </Button>
+        </div>
         <div className="mt-10 text-gray-400 text-sm font-sans select-none">Coming soon</div>
       </main>
     </div>
@@ -29,3 +40,4 @@ const Index = () => {
 };
 
 export default Index;
+
