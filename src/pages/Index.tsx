@@ -4,27 +4,28 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
-      <main className="flex flex-col items-center justify-center text-center w-full">
-        <h1
-          className="font-playfair font-bold text-4xl sm:text-5xl md:text-6xl text-black tracking-tighter mb-2"
-        >
-          Making <span className="text-[#0EA5E9]">OpenScience</span>
-          <br className="hidden sm:block" />
-          more accessible
+      <main className="flex flex-col items-center justify-center text-center w-full max-w-xl mx-auto">
+        <h1 className="mb-4 text-5xl md:text-6xl font-playfair font-bold text-black/90 leading-tight tracking-tighter">
+          <span className="block text-[#181E3C]">SemanticSearch</span>
+          <span className="mt-2 block text-blue-600 font-sans text-2xl font-semibold tracking-wide">Making OpenScience more accessible</span>
         </h1>
-        <div className="inline-block bg-blue-50 text-[#0EA5E9] px-4 py-2 rounded-full text-base font-medium mt-6 mb-2 tracking-tight">
-          Coming soon
-        </div>
+        <section className="my-8">
+          <h2 className="font-playfair text-xl md:text-2xl font-bold text-black mb-2">About LiteFold</h2>
+          <p className="text-base md:text-lg font-sans text-black/70 leading-relaxed">
+            LiteFold is an open-source web server for protein folding <br/>
+            and interactive scientific research.
+          </p>
+        </section>
         <Button
-          className="mt-8 bg-[#0EA5E9] hover:bg-[#33C3F0] text-white px-8 py-3 rounded-full text-lg font-semibold font-sans shadow transition"
+          className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-semibold font-sans shadow transition hover:scale-105"
           onClick={() => window.open("https://anindya.bearblog.dev/blogs", "_blank")}
         >
           Read Blog Posts
         </Button>
+        <div className="mt-10 text-gray-400 text-sm font-sans select-none">Coming soon</div>
       </main>
     </div>
   );
 };
 
 export default Index;
-
