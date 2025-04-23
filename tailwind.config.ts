@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +23,10 @@ export default {
 					'Inter',
 					'system-ui',
 					'sans-serif'
+				],
+				playfair: [
+					"'Playfair Display'",
+					'serif'
 				],
 			},
 			colors: {
