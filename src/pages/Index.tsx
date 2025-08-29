@@ -128,6 +128,106 @@ const Index = () => {
 
         <div className="mt-16 md:mt-20 text-slate-400 text-sm md:text-base">More coming soon</div>
       </main>
+
+      {/* Footer */}
+      <footer className="w-full mt-20 border-t border-slate-200/30 bg-gradient-to-br from-slate-50/80 to-white/60 backdrop-blur-lg">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+            {/* Brand Section */}
+            <div className="md:col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <img 
+                  src="/assets/logo.png" 
+                  alt="LiteFold Logo" 
+                  className="w-10 h-10 md:w-12 md:h-12"
+                />
+                <h3 className="font-instrument text-2xl md:text-3xl font-normal text-slate-900">LiteFold</h3>
+              </div>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-md mb-6">
+                Making AI-powered protein folding and structural biology more accessible to researchers worldwide.
+              </p>
+              <div className="flex space-x-4">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-slate-300/50 text-slate-700 hover:bg-slate-100/80 backdrop-blur-sm"
+                  onClick={() => window.open("https://github.com/Anindyadeep/litefold", "_blank")}
+                >
+                  <FaGithub className="h-4 w-4 mr-2" />
+                  GitHub
+                </Button>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-instrument text-lg font-normal text-slate-800 mb-4">Platform</h4>
+              <ul className="space-y-3">
+                <li>
+                  <button 
+                    onClick={() => window.open("https://litefold.vercel.app", "_blank")}
+                    className="text-slate-600 hover:text-teal-700 transition-colors text-sm"
+                  >
+                    Try LiteFold
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => window.open("https://github.com/Anindyadeep/litefold", "_blank")}
+                    className="text-slate-600 hover:text-teal-700 transition-colors text-sm"
+                  >
+                    Documentation
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => window.open("https://github.com/Anindyadeep/litefold/issues", "_blank")}
+                    className="text-slate-600 hover:text-teal-700 transition-colors text-sm"
+                  >
+                    Support
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h4 className="font-instrument text-lg font-normal text-slate-800 mb-4">Resources</h4>
+              <ul className="space-y-3">
+                <li>
+                  <button 
+                    onClick={() => window.open("https://copper-jasper-ae1.notion.site/Structural-biology-and-AlphaFold-1be76f0a4c39807a987de3733d61114e", "_blank")}
+                    className="text-slate-600 hover:text-violet-700 transition-colors text-sm"
+                  >
+                    Educational Blog
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => window.open("https://copper-jasper-ae1.notion.site/LiteFold-Folding-experiments-just-got-more-accessible-1d976f0a4c3980f5bc81c82f543330b9", "_blank")}
+                    className="text-slate-600 hover:text-violet-700 transition-colors text-sm"
+                  >
+                    Platform Launch
+                  </button>
+                </li>
+                <li>
+                  <span className="text-slate-400 text-sm">API Docs (Soon)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="mt-12 pt-8 border-t border-slate-200/30 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-slate-500 text-sm">
+              © 2024 LiteFold. Open source protein folding platform.
+            </p>
+            <div className="flex items-center space-x-6">
+              <span className="text-slate-400 text-xs">Built with ❤️ for science</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
